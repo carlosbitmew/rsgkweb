@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>睿思高科</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" type="images/x-icon" href="./assets/img/logo.png">
+  <style>
+    * {
+      touch-action: none;
+    }
+  </style>
+  <script>
+      (function () {  
+      let userAgentInfo = navigator.userAgent;
+      let Agents = [
+        "Android",
+        "iPhone",
+        "SymbianOS",
+        "Windows Phone",
+      ];
+      let flag = true;
+      for (let v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+          flag = false;
+          break;
+        }
+      }
+      console.log(flag);
+      if (flag === true) {
+        return false
+      } else {
+        window.location.href = 'http://124.117.223.202:8060/mobile/#/home'
+      }
+      return flag;
+    })()
+    </script>
+</head>
+
+<body>
+  <!-- notification for small viewports and landscape oriented smartphones -->
+  <div class="device-notification">
+    <a class="device-notification--logo" href="#0">
+      <img class="logo" src="assets/img/logo.png" alt="Global">
+      <p>新疆睿思高科</p>
+    </a>
+    <p class="device-notification--message">Global has so much to offer that we must request you orient your device to
+      portrait or find a larger screen. You won't be disappointed.</p>
+  </div>
+
+  <div class="perspective effect-rotate-left">
+    <div class="container">
+      <div class="outer-nav--return"></div>
+      <div id="viewport" class="l-viewport">
+        <div class="l-wrapper">
+          <header class="header">
+            <a class="header--logo" href="#0">
+              <img class="logo" src="assets/img/logo.png" alt="Global">
+              <p>新疆睿思高科</p>
+            </a>
+            <!-- <button class="header--cta cta">回到首页</button> -->
+            <div class="header--nav-toggle">
+              <span></span>
+            </div>
+          </header>
+          <!-- 侧边栏 -->
+          <nav class="l-side-nav">
+            <ul class="side-nav">
+              <li class="is-active"><span>人员定位</span></li>
+              <li class=""><span>舆情监测</span></li>
+              <li class=""><span>手持定位</span></li>
+
+            </ul>
+          </nav>
+          <ul class="l-main-content main-content ">
+
+            <!-- 第一个li -->
+            <li class="l-section section section--is-active">
+              <div class="contact">
+                <div class="contact-box">
+                  <div class="contact--lockup">
+                    <div class="home-h1-box">
+                      <h1 class="home-h1"> 高精度人员定位服务</h1>
+                      <h1 class="home-h1"> 人员信息的管理</h1>
+                      <h1 class="home-h1">人员位置的实时记录</h1>
+                      <h1 class="home-h1">轨迹回放</h1>
+                      <button class="home-h1-box-btton">查看详情</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- 第二个li -->
+            <li class="l-section section">
+                <div class="contact contact-two">
+                    <div class="contact--lockup">
+                      <div class="home-h1-box-two">
+                        <h1 class="home-h1"> 针对特定地区网络</h1>
+                        <h1 class="home-h1"> 净化网络环境</h1>
+                        <h1 class="home-h1">留言舆情管理</h1>
+                        <h1 class="home-h1">实时监测</h1>
+                        <button class="home-h1-box-btton">查看详情</button>
+                      </div>
+                    </div>
+                </div>
+              </li>
+            <!-- 第三个li -->
+            <li class="l-section section  ">
+              <div class="intro">
+                <div class="intro--banner">
+                  <h1 class="intro--banner-h1">手持定位<br>语音播报<br>终端状态查询</h1>
+                  <button class="cta">了解更多
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                      style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                        <path
+                          d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                      </g>
+                    </svg>
+                    <span class="btn-background"></span>
+                  </button>
+                  <img class="cta-img" src="assets/img/introduction-visual.png" alt="Welcome">
+                </div>
+                <div class="intro--options">
+                  <a href="#0">
+                    <h3>质量保障</h3>
+                    <p>拥有IP67级的防尘防水能力</p>
+                    <p>同时坚固耐摔</p>
+                  </a>
+                  <a href="#0">
+                    <h3>精密定位</h3>
+                    <p>搭载北斗定位芯片，可实现高度精密定位</p>
+                  </a>
+                  <a href="#0">
+                    <h3>终端管控</h3>
+                    <p>通过web平台，可实现轨迹追踪，人员定位</p>
+                    <p>自绘电子围栏，以及统计管理功能</p>
+
+                  </a>
+                </div>
+              </div>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 导航 -->
+    <ul class="outer-nav">
+      <li data='index' class="is-active">首页</li>
+      <li data='company'>公司详情</li>
+      <li data='software'>软件产品</li>
+      <li data="hardware">硬件产品</li>
+      <li data='property'>产权专利</li>
+    </ul>
+  </div>
+
+  <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')
+  </script>
+  <script src="assets/js/functions-min.js"></script>
+  
+</body>
+
+</html>

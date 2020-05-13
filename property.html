@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>睿思高科</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" type="images/x-icon" href="./assets/img/logo.png">
+  <style>
+    * {
+      touch-action: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- notification for small viewports and landscape oriented smartphones -->
+  <div class="device-notification">
+    <a class="device-notification--logo" href="#0">
+      <img class="logo" src="assets/img/logo.png" alt="Global">
+      <p>新疆睿思高科</p>
+    </a>
+    <p class="device-notification--message">Global has so much to offer that we must request you orient your device to
+      portrait or find a larger screen. You won't be disappointed.</p>
+  </div>
+
+  <div class="perspective effect-rotate-left">
+    <div class="container">
+      <div class="outer-nav--return"></div>
+      <div id="viewport" class="l-viewport">
+        <div class="l-wrapper">
+          <header class="header">
+            <a class="header--logo" href="#0">
+              <img class="logo" src="assets/img/logo.png" alt="Global">
+              <p>新疆睿思高科</p>
+            </a>
+            <!-- <button class="header--cta cta">回到首页</button> -->
+            <div class="header--nav-toggle">
+              <span></span>
+            </div>
+          </header>
+          <!-- 侧边栏 -->
+          <nav class="l-side-nav">
+            <ul class="side-nav">
+              <li class="is-active"><span>产权证书</span></li>
+              <li class=""><span>著作权证书</span></li>
+              <li class=""><span>著作权证书</span></li>
+              <li class=""><span>认证证书
+                </span></li>
+            </ul>
+          </nav>
+          <ul class="l-main-content main-content ">
+
+            <!-- 介绍li -->
+            <li class="l-section section section--is-active">
+              <div class="img-box">
+                <img src="./assets/img/honour/2019-07-26_001.jpg" alt="">
+                <img src="./assets/img/honour/2019-07-26_002.jpg" alt="">
+
+              </div>
+            </li>
+            <li class="l-section section ">
+              <div class="img-two-box">
+                <img src="./assets/img/honour/2019-07-26_003.jpg" alt="">
+                <img src="./assets/img/honour/2019-07-26_004.jpg" alt="">
+                <img src="./assets/img/honour/2019-07-26_005.jpg" alt="">
+                <img src="./assets/img/honour/2019-07-26_006.jpg" alt="">
+                <img src="./assets/img/honour/2019-07-26_007.jpg" alt="">
+                <img src="./assets/img/honour/2019-07-26_008.jpg" alt="">
+                <img src="./assets/img/honour/2019-07-26_009.jpg" alt="">
+                <img src="./assets/img/honour/2019-07-26_010.jpg" alt="">
+              </div>
+            </li>
+            <!-- 介绍li -->
+            <li class="l-section section ">
+              <div class="img-two-box">
+
+                <img src="./assets/img/honour/2019-07-26_011.jpg" alt="">
+                <img src="./assets/img/honour/2019-07-26_012.jpg" alt="">
+                <img src="./assets/img/honour/2019-07-26_013.jpg" alt="">
+                <img src="./assets/img/honour/2019-07-26_014.jpg" alt="">
+                <img src="./assets/img/honour/2019-07-26_015.jpg" alt="">
+                <img src="./assets/img/honour/2019-07-26_016.jpg" alt="">
+                <img src="./assets/img/honour/2019-07-26_017.jpg" alt="">
+                <img src="./assets/img/honour/2019-07-26_018.jpg" alt="">
+
+
+              </div>
+            </li>
+            <li class="l-section section ">
+              <div class="img-box">
+                <img src="./assets/img/honour/2019-07-26_024.jpg" alt="">
+                <img src="./assets/img/honour/2019-07-26_025.jpg" alt="">
+
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 导航 -->
+    <ul class="outer-nav">
+      <li data='index' class="is-active">首页</li>
+      <li data='company'>公司详情</li>
+      <li data='software'>软件产品</li>
+      <li data='hardware'>硬件产品</li>
+      <li data='property'>产权专利</li>
+    </ul>
+  </div>
+
+  <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')
+  </script>
+  <script src="assets/js/functions-min.js"></script>
+  <script>
+      (function () {
+        let userAgentInfo = navigator.userAgent;
+        let Agents = [
+          "Android",
+          "iPhone",
+          "SymbianOS",
+          "Windows Phone",
+        ];
+        let flag = true;
+        for (let v = 0; v < Agents.length; v++) {
+          if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+          }
+        }
+        console.log(flag);
+        if (flag === true) {
+          return false
+        } else {
+          window.location.href = 'http://124.117.223.202:8060/mobile/#/certificate'
+        }
+        return flag;
+      })()
+  </script>
+</body>
+
+</html>
